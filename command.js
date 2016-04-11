@@ -7,11 +7,12 @@ var path = require('path');
 
 program
     .version('0.0.1')
-    .option('-d, --dir <path>', '代理目录')
-    .option('-o, --port <path>', '代理端口')
-    .option('-s, --ports <path>', 'https代理端口')
-    .option('-p, --path <path>', '映射地址', '/m/app/src')
+    .option('-d, --dir <path>', 'the catalog to be proxyed')
+    .option('-o, --port <path>', 'http portal, default 80')
+    .option('-s, --ports <path>', 'https portal, default 443')
+    .option('-p, --path <path>', 'middle path,default /m/app/src', '/m/app/src')
     .parse(process.argv);
+
 
 var fileServer = new static.Server(program.dir);
 var httpsCreator = require('https');
