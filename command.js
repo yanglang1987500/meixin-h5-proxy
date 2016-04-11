@@ -18,26 +18,25 @@ var fileServer = new static.Server(program.dir);
 var httpsCreator = require('https');
 var httpCreator = require('http');
 
-
 var options = {
-    key: fs.readFileSync('./privkey.pem'),
-    cert: fs.readFileSync('./cacert.pem')
+    key: fs.readFileSync(path.join(__dirname, 'privkey.pem')),
+    cert: fs.readFileSync(path.join(__dirname, 'cacert.pem'))
 };
 options.agent = new httpsCreator.Agent(options);
 httpsCreator.createServer(options, function (request, response) {
-    request.url = request.url.replace(program.path,'');
+    request.url = request.url.replace(program.path, '');
     request.addListener('end', function () {
-        fileServer.serve(request, response,function (e, res) {
-                e&&console.log(e);
+        fileServer.serve(request, response, function (e, res) {
+            e && console.log(e);
         });
     }).resume();
 }).listen(parseInt(program.ports ? program.ports : 443));
 
 httpCreator.createServer(function (request, response) {
-    request.url = request.url.replace(program.path,'');
+    request.url = request.url.replace(program.path, '');
     request.addListener('end', function () {
-        fileServer.serve(request, response,function (e, res) {
-            e&&console.log(e);
+        fileServer.serve(request, response, function (e, res) {
+            e && console.log(e);
         });
     }).resume();
 }).listen(parseInt(program.port ? program.port : 80));
