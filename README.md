@@ -19,7 +19,7 @@ npm install meixin-h5-proxy --save-dev
 
 然后可以直接通过如下命令进行代理
 ```
-proxy -d 'D:\work\mshop svn\trunk\Public\mshop_svn_resources\src' -p '/m/app/src'
+proxy -d "D:\work\mshop svn\trunk\Public\mshop_svn_resources\src" -p "/m/app/src"
 ```
 
 可以通过

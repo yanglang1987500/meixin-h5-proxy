@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   '\'submitfds\'' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\work\\meixin-h5-proxy',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\meixin-h5-proxy\1.0.5\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 verbose tar pack [ 'C:\\Users\\yanglang.MEIXIN\\AppData\\Roaming\\npm-cache\\meixin-h5-proxy\\1.0.5\\package.tgz',
+10 verbose tar pack   'D:\\work\\meixin-h5-proxy' ]
+11 verbose tarball C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\meixin-h5-proxy\1.0.5\package.tgz
+12 verbose folder D:\work\meixin-h5-proxy
+13 info prepublish meixin-h5-proxy@1.0.5
+14 verbose addLocalTarball adding from inside cache C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\meixin-h5-proxy\1.0.5\package.tgz
+15 verbose correctMkdir C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+16 silly cache afterAdd meixin-h5-proxy@1.0.5
+17 verbose afterAdd C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\meixin-h5-proxy\1.0.5\package\package.json not in flight; writing
+18 verbose correctMkdir C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 verbose afterAdd C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\meixin-h5-proxy\1.0.5\package\package.json written
+20 silly publish { name: 'meixin-h5-proxy',
+20 silly publish   version: '1.0.5',
+20 silly publish   description: '美信H5 CDN代理模块',
+20 silly publish   main: 'command.js',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   author: { name: 'yanglang' },
+20 silly publish   license: 'MIT',
+20 silly publish   devDependencies: { commander: '^2.9.0', 'node-static': '^0.7.7' },
+20 silly publish   bin: { proxy: './command.js' },
+20 silly publish   dependencies: { commander: '^2.9.0', 'node-static': '^0.7.7' },
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/yanglang1987500/meixin-h5-proxy.git' },
+20 silly publish   keywords: [ 'cdn', 'proxy', 'meixin', 'h5' ],
+20 silly publish   bugs: { url: 'https://github.com/yanglang1987500/meixin-h5-proxy/issues' },
+20 silly publish   homepage: 'https://github.com/yanglang1987500/meixin-h5-proxy#readme',
+20 silly publish   readme: '[meixin-h5-proxy](https://github.com/yanglang1987500/meixin-h5-proxy) — 美信H5 CDN代理模块\n==================================================\n\n简介\n----\n\n此模块通过nodejs安装后可以直接进行CDN资源代理，便于调试。\n\n使用指南\n----\n与gulp一样，支持全局命令proxy<br>\n\n```\nnpm install meixin-h5-proxy -g\n```\n```\nnpm install meixin-h5-proxy --save-dev\n```\n\n然后可以直接通过如下命令进行代理\n```\nproxy -d \'D:\\work\\mshop svn\\trunk\\Public\\mshop_svn_resources\\src\' -p \'/m/app/src\'\n```\n\n可以通过\n```\nproxy -h\n```\n查看帮助\n-d代表想要代理的文件目录，-p代表CDN链接中间那部分\n\n\n最后需要配置一下hosts，\n---\n127.0.0.1  js-pre.meixincdn.com',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: '23f2a0b5a44f4be5265602faaae23e3214479ac3',
+20 silly publish   _id: 'meixin-h5-proxy@1.0.5',
+20 silly publish   _shasum: 'c3f091f52f9cae4fd5b78c1c11778040d1fc46f7',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name meixin-h5-proxy
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/meixin-h5-proxy
+26 verbose publish registryBase https://registry.npmjs.org/
+27 silly publish uploading C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\meixin-h5-proxy\1.0.5\package.tgz
+28 verbose request uri https://registry.npmjs.org/meixin-h5-proxy
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 17:39:23
+31 verbose request using bearer token for auth
+32 verbose request id 8cd9ce3aaf98f3fc
+33 http request PUT https://registry.npmjs.org/meixin-h5-proxy
+34 http 403 https://registry.npmjs.org/meixin-h5-proxy
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '95',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Mon, 11 Apr 2016 09:39:24 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-nrt6132-NRT',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1460367564.362565,VS0,VE490',
+35 verbose headers   vary: 'Accept-Encoding' }
+36 verbose request invalidating C:\Users\yanglang.MEIXIN\AppData\Roaming\npm-cache\registry.npmjs.org\meixin-h5-proxy on PUT
+37 error publish Failed PUT 403
+38 verbose stack Error: "You cannot publish over the previously published version 1.0.5." : meixin-h5-proxy
+38 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+38 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+38 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+39 verbose statusCode 403
+40 verbose pkgid meixin-h5-proxy
+41 verbose cwd D:\work\meixin-h5-proxy
+42 error Windows_NT 6.1.7601
+43 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "--tag" "'submitfds'"
+44 error node v4.4.0
+45 error npm  v2.14.20
+46 error code E403
+47 error "You cannot publish over the previously published version 1.0.5." : meixin-h5-proxy
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
