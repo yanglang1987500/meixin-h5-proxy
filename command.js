@@ -42,3 +42,4 @@ httpCreator.createServer(function (request, response) {
     }).resume();
 }).listen(parseInt(program.port ? program.port : 80));
 
+console.log('start proxy.');
