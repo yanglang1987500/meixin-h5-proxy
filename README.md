@@ -1,14 +1,14 @@
-[meixin-h5-proxy](https://github.com/yanglang1987500/meixin-h5-proxy) ¡ª ÃÀĞÅH5 CDN´úÀíÄ£¿é
+[meixin-h5-proxy](https://github.com/yanglang1987500/meixin-h5-proxy) â€” ç¾ä¿¡H5 CDNä»£ç†æ¨¡å—
 ==================================================
 
-¼ò½é
+ç®€ä»‹
 ----
 
-´ËÄ£¿éÍ¨¹ınodejs°²×°ºó¿ÉÒÔÖ±½Ó½øĞĞCDN×ÊÔ´´úÀí£¬±ãÓÚµ÷ÊÔ¡£
+æ­¤æ¨¡å—é€šè¿‡nodejså®‰è£…åå¯ä»¥ç›´æ¥è¿›è¡ŒCDNèµ„æºä»£ç†ï¼Œä¾¿äºè°ƒè¯•ã€‚
 
-Ê¹ÓÃÖ¸ÄÏ
+ä½¿ç”¨æŒ‡å—
 ----
-ÓëgulpÒ»Ñù£¬Ö§³ÖÈ«¾ÖÃüÁîproxy<br>
+ä¸gulpä¸€æ ·ï¼Œæ”¯æŒå…¨å±€å‘½ä»¤proxy<br>
 
 ```
 npm install meixin-h5-proxy -g
@@ -17,19 +17,19 @@ npm install meixin-h5-proxy -g
 npm install meixin-h5-proxy --save-dev
 ```
 
-È»ºó¿ÉÒÔÖ±½ÓÍ¨¹ıÈçÏÂÃüÁî½øĞĞ´úÀí
+ç„¶åå¯ä»¥ç›´æ¥é€šè¿‡å¦‚ä¸‹å‘½ä»¤è¿›è¡Œä»£ç†
 ```
 proxy -d 'D:\work\mshop svn\trunk\Public\mshop_svn_resources\src' -p '/m/app/src'
 ```
 
-¿ÉÒÔÍ¨¹ı
+å¯ä»¥é€šè¿‡
 ```
 proxy -h
 ```
-²é¿´°ïÖú
--d´ú±íÏëÒª´úÀíµÄÎÄ¼şÄ¿Â¼£¬-p´ú±íCDNÁ´½ÓÖĞ¼äÄÇ²¿·Ö
+æŸ¥çœ‹å¸®åŠ©
+-dä»£è¡¨æƒ³è¦ä»£ç†çš„æ–‡ä»¶ç›®å½•ï¼Œ-pä»£è¡¨CDNé“¾æ¥ä¸­é—´é‚£éƒ¨åˆ†
 
 
-×îºóĞèÒªÅäÖÃÒ»ÏÂhosts£¬
+æœ€åéœ€è¦é…ç½®ä¸€ä¸‹hostsï¼Œ
 ---
 127.0.0.1  js-pre.meixincdn.com
