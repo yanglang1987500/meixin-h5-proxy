@@ -1,0 +1,36 @@
+{
+  "name": "meixin-h5-proxy",
+  "version": "1.0.0",
+  "description": "美信H5 CDN代理模块",
+  "main": "command.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanglang",
+  "license": "MIT",
+  "devDependencies": {
+    "commander": "^2.9.0",
+    "node-static": "^0.7.7"
+  },
+  "bin": {
+    "proxy": "./command.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "node-static": "^0.7.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanglang1987500/meixin-h5-proxy.git"
+  },
+  "keywords": [
+    "cdn",
+    "proxy",
+    "meixin",
+    "h5"
+  ],
+  "bugs": {
+    "url": "https://github.com/yanglang1987500/meixin-h5-proxy/issues"
+  },
+  "homepage": "https://github.com/yanglang1987500/meixin-h5-proxy#readme"
+}
