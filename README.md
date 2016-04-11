@@ -31,5 +31,5 @@ proxy -h
 
 
 最后需要配置一下hosts，
-===
+---
 127.0.0.1  js-pre.meixincdn.com
