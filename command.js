@@ -24,21 +24,21 @@ var options = {
 };
 options.agent = new httpsCreator.Agent(options);
 httpsCreator.createServer(options, function (request, response) {
-    request.url = request.url.replace(program.path, '');
-    request.addListener('end', function () {
-        fileServer.serve(request, response, function (e, res) {
-            e && console.log(e);
-        });
-    }).resume();
+    doProxy(request,response);
 }).listen(parseInt(program.ports ? program.ports : 443));
 
 httpCreator.createServer(function (request, response) {
+    doProxy(request,response);
+}).listen(parseInt(program.port ? program.port : 80));
+
+function doProxy(request,response){
+    console.log('proxy file:'+request.url);
     request.url = request.url.replace(program.path, '');
     request.addListener('end', function () {
         fileServer.serve(request, response, function (e, res) {
             e && console.log(e);
         });
     }).resume();
-}).listen(parseInt(program.port ? program.port : 80));
+}
 
 console.log('start proxy.');
