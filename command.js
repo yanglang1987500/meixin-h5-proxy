@@ -14,7 +14,9 @@ program
     .parse(process.argv);
 
 
-var fileServer = new static.Server(program.dir);
+var fileServer = new static.Server(program.dir,
+    {headers:{'Access-Control-Allow-Origin': '*'}}
+);
 var httpsCreator = require('https');
 var httpCreator = require('http');
 
